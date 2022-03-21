@@ -1,0 +1,133 @@
+:root{
+    --bac:#333;
+}
+
+body{
+    /* background-color: #333; */
+    margin: 0%;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.F-nav{
+    width: 100%;
+    height: 6rem;
+    background-image: url('./image/5300204.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+}
+.icon{
+    margin-right: 5%;
+}
+.icon > a{
+    color: #fff;
+    margin-left: 0.8rem;
+    margin-right: 1rem;
+    font-size: 1.8rem;
+}
+.F-nav input{
+    padding: 0.6rem;
+    width: 18rem;
+    border-radius:2rem ;
+    background-color: var(--bac);
+    color: #ccc;
+}
+.T-nav{
+    height: 3rem;
+    background-color: var(--bac);
+    display: grid;
+    grid-template-columns: 10% 10% 1fr;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
