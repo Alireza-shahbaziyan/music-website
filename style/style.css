@@ -1,16 +1,20 @@
-:root{
-    --bac:#333;
+:root {
+    --bac: rgb(32, 32, 32);
+    --hover: rgb(221, 221, 221);
+    --active: rgb(50, 100, 168);
 }
 
-body{
+body {
     /* background-color: #333; */
+    overflow: hidden;
     margin: 0%;
 }
-a{
+
+a {
     text-decoration: none;
-    color: #fff;
 }
-.F-nav{
+
+.F-nav {
     width: 100%;
     height: 6rem;
     background-image: url('./image/5300204.jpg');
@@ -21,101 +25,54 @@ a{
     align-items: center;
     overflow: hidden;
 }
-.icon{
+
+.icon {
     margin-right: 5%;
 }
-.icon > a{
+
+.icon>a {
     color: #fff;
     margin-left: 0.8rem;
     margin-right: 1rem;
     font-size: 1.8rem;
 }
-.F-nav input{
+
+.F-nav input {
     padding: 0.6rem;
     width: 18rem;
-    border-radius:2rem ;
+    border-radius: 2rem;
     background-color: var(--bac);
     color: #ccc;
 }
+
 .T-nav{
-    height: 3rem;
     background-color: var(--bac);
     display: grid;
-    grid-template-columns: 10% 10% 1fr;
+    grid-template-columns: repeat(6,8%) 1fr;
+    align-items: center;
+    font-size: x-large;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.T-nav a{
+    width: 15rem;
+    color: white;
+    margin-left: 2%;
+}
+.logo img{
+    height: 50px;
+}
+.logo{
+    justify-self: flex-end;
+    margin-right: 5%;
+}
+.poster{
+    width: 100%;
+    height: 1000px;
+    background-color: var(--active);
+}
+.poster img{
+    width: 100%;
+    /* height: 1000px; */
+}
 
 
 
