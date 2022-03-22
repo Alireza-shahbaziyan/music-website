@@ -1,90 +1,90 @@
 :root {
-    --bac: rgb(32, 32, 32);
-    --hover: rgb(221, 221, 221);
-    --active: rgb(50, 100, 168);
+    --headerColor:#212121;
+    --navColor: #333;
+    --font-color:#fff;
+    --hoer-color:#555;
 }
-
-body {
-    /* background-color: #333; */
-    overflow: hidden;
-    margin: 0%;
-}
-
-a {
+a{
     text-decoration: none;
-}
-
-.F-nav {
-    width: 100%;
-    height: 6rem;
-    background-image: url('./image/5300204.jpg');
-    background-size: cover;
-    display: flex;
-    justify-content: end;
-    flex-direction: row;
-    align-items: center;
-    overflow: hidden;
-}
-
-.icon {
-    margin-right: 5%;
-}
-
-.icon>a {
-    color: #fff;
-    margin-left: 0.8rem;
-    margin-right: 1rem;
-    font-size: 1.8rem;
-}
-
-.F-nav input {
-    padding: 0.6rem;
-    width: 18rem;
-    border-radius: 2rem;
-    background-color: var(--bac);
-    color: #ccc;
-}
-
-.T-nav{
-    background-color: var(--bac);
-    display: grid;
-    grid-template-columns: repeat(6,8%) 1fr;
-    align-items: center;
-    font-size: x-large;
-}
-.T-nav a{
-    width: 15rem;
     color: white;
+}
+body {
+    margin: 0%;
+    box-sizing: border-box;
+    background-color: var(--bacColor);
+}
+#searchTop{
+    padding: 1%;
+    border-radius: 20px;
+}
+
+.header {
+    grid-area: header;
+    background-color: var(--headerColor);
+    height: 60px;
+    width: 100%;
+    font-size: x-large;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    gap: 20px;
+}
+.header :first-child{
     margin-left: 2%;
 }
-.logo img{
-    height: 50px;
-}
-.logo{
-    justify-self: flex-end;
-    margin-right: 5%;
-}
-.poster{
-    width: 100%;
-    height: 1000px;
-    background-color: var(--active);
-}
-.poster img{
-    width: 100%;
-    /* height: 1000px; */
+.header a:hover{
+    font-size: xx-large;
 }
 
+.navbar {
+    position: sticky;
+    grid-area: navbar;
+}
 
+.Slideshow {
+    grid-area: Slideshow;
+    background-color: orangered;
+    padding: 20rem;
+}
 
+.body {
+    grid-area: body;
+    background-color: red;
+    padding: 30rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.footer {
+    grid-area: footer;
+    background-color: chartreuse;
+    padding: 4rem;
+}
+.Continer{
+    grid-template-areas: 
+    'header header header header '
+    'navbar navbar navbar navbar '
+    'body body body body'
+    'footer footer footer footer'
+    ;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--navColor);
+    color: var(--font-color);
+    height: 4rem;
+}
+.nav .title{
+    font-size: 1.5rem;
+    margin: 0.5rem;
+}
+.navbar-links ul{
+    list-style: none;
+    display: flex;
+}
+.navbar-links li a{
+    padding: 1rem;
+}
+.navbar-links li a:hover{
+    background-color:var(--hoer-color) ;
+}
