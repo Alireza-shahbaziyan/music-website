@@ -1,27 +1,31 @@
 :root {
-    --headerColor:#212121;
-    --navColor: #333;
-    --font-color:#fff;
-    --hoer-color:#555;
+    --headerColor: #212121;
+    --navColor: rgb(51, 51, 51);
+    --font-color: #fff;
+    --hoer-color: #3f0d75;
 }
-a{
+
+a {
     text-decoration: none;
     color: white;
 }
+
 body {
     margin: 0%;
     box-sizing: border-box;
     background-color: var(--bacColor);
 }
-#searchTop{
+
+#searchTop {
     padding: 1%;
     border-radius: 20px;
 }
 
 .header {
     grid-area: header;
-    background-color: var(--headerColor);
-    height: 60px;
+    background: url('../image/Musical.jpg') no-repeat;
+    background-size: cover;
+    height: 80px;
     width: 100%;
     font-size: x-large;
     display: flex;
@@ -29,10 +33,12 @@ body {
     align-items: center;
     gap: 20px;
 }
-.header :first-child{
+
+.header :first-child {
     margin-left: 2%;
 }
-.header a:hover{
+
+.header a:hover {
     font-size: xx-large;
 }
 
@@ -42,14 +48,16 @@ body {
 }
 
 .Slideshow {
+    background: url('../image/959083-bed-sunset-digital.jpg') no-repeat;
+    background-size: cover;
     grid-area: Slideshow;
-    background-color: orangered;
+    background-color: #2600ad;
     padding: 20rem;
 }
 
 .body {
     grid-area: body;
-    background-color: red;
+    background-color: #7600ad;
     padding: 30rem;
 }
 
@@ -58,33 +66,108 @@ body {
     background-color: chartreuse;
     padding: 4rem;
 }
-.Continer{
-    grid-template-areas: 
-    'header header header header '
-    'navbar navbar navbar navbar '
-    'body body body body'
-    'footer footer footer footer'
+
+.Continer {
+    grid-template-areas:
+        'header header header header '
+        'navbar navbar navbar navbar '
+        'body body body body'
+        'footer footer footer footer'
     ;
 }
-.nav{
+
+.nav {
+    opacity: 0.5;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--navColor);
+    background-image: linear-gradient(to bottom right, #210680, #0a3478);
     color: var(--font-color);
     height: 4rem;
 }
-.nav .title{
+
+.nav .title h1 {
     font-size: 1.5rem;
     margin: 0.5rem;
 }
-.navbar-links ul{
+
+.navbar-links ul {
     list-style: none;
     display: flex;
 }
-.navbar-links li a{
+
+.navbar-links li a {
     padding: 1rem;
 }
-.navbar-links li a:hover{
-    background-color:var(--hoer-color) ;
+
+.navbar-links li a:hover {
+    background-color: var(--hoer-color);
+}
+
+.toggle-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 30px;
+    height: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.toggle-button .bar {
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+@media (max-width:400px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    #searchTop {
+        display: none;
+    }
+
+    .header a {
+        display: none;
+    }
+
+    .header {
+        justify-content: center;
+        height: 40px;
+    }
+
+    .Slideshow {
+        background: url('../image/HD-wallpaper-music.jpg');
+    }
 }
