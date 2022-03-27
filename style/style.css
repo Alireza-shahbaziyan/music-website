@@ -2,7 +2,7 @@
     --headerColor: #212121;
     --navColor: rgb(51, 51, 51);
     --font-color: #fff;
-    --hoer-color: #3f0d75;
+    --hoer-color: #fff;
 }
 
 a {
@@ -48,10 +48,9 @@ body {
 }
 
 .Slideshow {
-    background: url('../image/959083-bed-sunset-digital.jpg') no-repeat;
-    background-size: cover;
     grid-area: Slideshow;
-    background-color: #2600ad;
+    position: relative;
+    background-color: #555;
     padding: 20rem;
 }
 
@@ -81,7 +80,7 @@ body {
     position: relative;
     justify-content: space-between;
     align-items: center;
-    background-image: linear-gradient(to bottom right, #383f85, #550fab);
+    background-color: rgb(71, 71, 71);
     color: white;
 }
 
@@ -111,8 +110,9 @@ body {
     padding: 1rem;
 }
 
-.navbar-links li:hover {
-    background-color: #b000b0;
+.navbar-links li a:hover {
+    background-color: #b0aeae;
+    color: #212121;
 }
 
 .toggle-button {
@@ -163,10 +163,5 @@ body {
 
     .navbar-links.active {
         display: flex;
-    }
-
-    .Slideshow {
-        background-image: url('../image/HD-wallpaper-music.jpg');
-        background-size: contain;
     }
 }
