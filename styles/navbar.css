@@ -1,0 +1,30 @@
+:root{
+    --navbarColor:#191c24;
+    --aColor:#fff;  
+    --hoverBack:#97a1bd;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--navbarColor);
+}
+.navbar-dot{
+    background-color: var(--navbarColor);
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: end;
+}
+.navbar-dot a{
+    color: var(--aColor);
+}
+.navbar-links a{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 1rem 8px;
+    color: var(--aColor);
+}
+.navbar-links a:hover{
+    background-color: var(--hoverBack);
+    color: var(--navbarColor);
+}
