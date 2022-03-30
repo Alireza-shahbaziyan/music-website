@@ -1,0 +1,40 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('../image/desktop\ \(7\).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -6rem;
+    background-attachment: fixed;
+}
+.continer{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 0.75fr 9fr 8fr 3fr 12fr 4fr;
+}
+.header{
+    height: 5rem;
+}
+.navbar{
+    background-color:#202020 ;
+}
+.three{
+    /* background-color: orange; */
+}
+.four{
+    background-color: blueviolet;
+}
+.foive{
+    background-color: darkcyan;
+}
+.six{
+    background-color: black;
+    
+}
+.seven{
+    background-color: green;
+}
